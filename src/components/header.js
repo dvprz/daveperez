@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import React from 'react'
 
+import Logo from './logo'
+
 const Hamburger = styled.button`
   border: none;
   background-color: transparent;
@@ -58,7 +60,7 @@ const StyledHeaderWrapper = styled.div`
 const Header = ({ siteTitle }) => (
   <StyledHeader>
     <StyledHeaderWrapper>
-      <h1 style={{ margin: 0 }}>{siteTitle}</h1>
+      <Logo siteTitle={siteTitle} />
       <Button />
     </StyledHeaderWrapper>
   </StyledHeader>
